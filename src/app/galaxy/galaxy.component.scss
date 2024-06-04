@@ -1,0 +1,19 @@
+
+h1{
+  color: white;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 0;
+  text-align: center;
+  transition: 1000ms all ease-in-out;
+}
+
+.hello-w{
+  padding-block: 10%;
+}
+
+.hello-w{
+  -webkit-perspective: 1000;
+  -webkit-transform: translate(0%, 0%) translateZ(-400px);
+  animation: 1s ease-out 0s 1;
+}
