@@ -25,9 +25,21 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+:root {
+  --primaria: rgb(34, 23, 69);
+  --secundaria: #b18eed;
+
+  .text-primaria {
+    color: var(--primaria);
+  }
+  .text-secundaria {
+    color: var(--secundaria);
+  }
+}
+
 
 body{
-    background-color: rgb(34, 23, 69);
+    background-color: var(--primaria);
     font-family: 'Unbounded', cursive;
 }
 
