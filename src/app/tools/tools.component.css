@@ -1,0 +1,18 @@
+.stack-title{
+  color: var(--secundaria);
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.847);
+}
+
+.stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-tool{
+  width: 3.5%;
+  height: 3.5%;
+}
