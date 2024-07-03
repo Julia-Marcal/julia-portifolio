@@ -5,5 +5,13 @@
         <app-galaxy></app-galaxy>
         <app-about-me></app-about-me>
         <app-tools></app-tools>
+
+        <section class="jobs">
+          <h1 class="jobs-h1">Experiência</h1>
+          <div class="experience">
+            <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
+          </div>
+        </section>
+
     </div>
 </div>
