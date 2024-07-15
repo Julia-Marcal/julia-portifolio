@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { GalaxyComponent } from './components/galaxy/galaxy.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
@@ -11,9 +12,9 @@ import { Job } from './models/job';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, GalaxyComponent, NavBarComponent, AboutMeComponent, ToolsComponent, JobCardComponent],
+  imports: [CommonModule, RouterOutlet, GalaxyComponent, NavBarComponent, AboutMeComponent, ToolsComponent, JobCardComponent], // Include CommonModule here
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   jobs: Job[] = [];

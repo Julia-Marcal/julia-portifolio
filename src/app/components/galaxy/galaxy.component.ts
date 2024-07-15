@@ -10,7 +10,12 @@ let particlesTS: any;
 })
 export class GalaxyComponent implements OnInit {
   ngOnInit(): void {
-    particlesTS.load('particles-ts', '../../assets/particles.json', function () {
-    });
+    if (particlesTS && particlesTS.load) {
+      particlesTS.load('particles-ts', '../../assets/particles.json', function () {
+        console.log('particles.js loaded');
+      });
+    } else {
+      console.error('particlesTS is not defined or load method is not available');
+    }
   }
 }

@@ -28,6 +28,7 @@ time, mark, audio, video {
 :root {
   --primaria: rgb(34, 23, 69);
   --secundaria: #b18eed;
+  --mid-color: rgb(106, 83, 153);
 
   .text-primaria {
     color: var(--primaria);

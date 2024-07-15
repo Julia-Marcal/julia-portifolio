@@ -1,10 +1,11 @@
+// src/app/models/job.ts
 export class Job {
   constructor(
-    public image: string,
-    public alt: string,
+    public imageUrl: string,
+    public imageAlt: string,
     public link: string,
     public title: string,
-    public func: string,
-    public descriptions: string[]
+    public type: string,
+    public tasks: string[]
   ) {}
 }

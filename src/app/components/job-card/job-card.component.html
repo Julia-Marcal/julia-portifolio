@@ -1,9 +1,8 @@
 <div class="job-card">
-  <div class="job-infos">
-    <img class="job-image" [src]="job.image" [alt]="job.alt">
-    <h2 class="job-title">{{ job.title }} <span class="job-func">{{ job.func }}</span></h2>
-  </div>
-  <div *ngFor="let desc of job.descriptions">
-    <p class="job-desc">{{ desc }}</p>
-  </div>
+  <h2 style="text-align: center;">{{ job.title }}</h2>
+  <img [src]="job.imageUrl" [alt]="job.imageAlt">
+  <h3 style="text-align: center;">{{ job.type }}</h3>
+  <ul>
+    <li *ngFor="let task of job.tasks">{{ task }}</li>
+  </ul>
 </div>
