@@ -19,9 +19,10 @@
     <div>
       <section class="jobs mt-20">
         <h1 class="jobs-h1 text-2xl" style="color: white; text-align: center;">
-          Projetos</h1>
+          Projetos
+        </h1>
         <div class="experience columns-auto" style="display: flex;">
-          <app-projects-card *ngFor="let proj of projects" [proj]="proj"></app-projects-card>
+          <app-projects-card *ngFor="let project of projects" [project]="project"></app-projects-card>
         </div>
       </section>
     </div>

@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Project } from '../../models/project';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-projects-card',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent {
-
+export class ProjectsCardComponent {
+  @Input() project!: Project;
 }

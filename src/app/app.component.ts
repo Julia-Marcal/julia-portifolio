@@ -5,7 +5,7 @@ import { GalaxyComponent } from './components/galaxy/galaxy.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsCardComponent } from './components/projects/projects.component';
 import { ToolsComponent } from './tools/tools.component';
 import { JobService } from './services/job.service';
 import { Job } from './models/job';
@@ -15,7 +15,7 @@ import { Project } from './models/project';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, GalaxyComponent, NavBarComponent, AboutMeComponent, ToolsComponent, JobCardComponent, ProjectsComponent],
+  imports: [CommonModule, RouterOutlet, GalaxyComponent, NavBarComponent, AboutMeComponent, ToolsComponent, JobCardComponent, ProjectsCardComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

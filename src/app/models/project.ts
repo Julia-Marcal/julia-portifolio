@@ -1,4 +1,3 @@
-// src/app/models/job.ts
 export class Project {
   constructor(
     public imageUrl: string,
