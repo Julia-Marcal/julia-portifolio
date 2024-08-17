@@ -7,7 +7,7 @@ import { Job } from '../models/job';
 export class JobService {
   private jobs: Job[] = [
     new Job(
-      'src/opengenus.jpg',
+      '../../assets/images/opengenus.jpg',
       'opengenus',
       'https://br.fiverr.com/juliamarcal',
       'Open Genus',
@@ -19,7 +19,7 @@ export class JobService {
       ]
     ),
     new Job(
-      'src/fiverr.png',
+      '../../assets/images/fiverr.png',
       'fiverr',
       'https://br.fiverr.com/juliamarcal',
       'Fiverr',
@@ -31,7 +31,7 @@ export class JobService {
       ]
     ),
     new Job(
-      'src/windDigital.png',
+      '../../assets/images/windDigital.png',
       'wind',
       'https://winddigital.com.br',
       'Wind',

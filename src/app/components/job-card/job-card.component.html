@@ -1,8 +1,11 @@
-<div class="job-card">
-  <h2 style="text-align: center;">{{ job.title }}</h2>
-  <img [src]="job.imageUrl" [alt]="job.imageAlt">
-  <h3 style="text-align: center;">{{ job.type }}</h3>
-  <ul>
-    <li *ngFor="let task of job.tasks">{{ task }}</li>
-  </ul>
+<div class="m-10">
+  <a href="#" class="flex flex-col items-center bg-violet-950 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-violet-900">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg job-img rounded-md" [src]="job.imageUrl" [alt]="job.imageAlt">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold text-white">{{ job.title }} - {{ job.type }}</h5>
+        <ul class="mb-3 font-normal text-secundaria dark:text-terciario">
+          <li *ngFor="let task of job.tasks">{{ task }}</li>
+        </ul>
+    </div>
+  </a>
 </div>

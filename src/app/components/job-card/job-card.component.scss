@@ -1,12 +1,4 @@
-.h2, .h3, .li {
-  color: rgba(255, 255, 255, 0.919);
-}
-
-.job-card{
-  background-color: var(--mid-color);
-  margin: 20px;
-}
-
-:host {
-  color: rgba(255, 255, 255, 0.919);
+.job-img{
+  width: 150px;
+  height: 150px;
 }
