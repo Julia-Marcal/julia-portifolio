@@ -6,12 +6,24 @@
     <app-about-me></app-about-me>
     <app-tools></app-tools>
 
-    <section class="jobs">
-      <h1 class="jobs-h1" style="color: white; text-align: center;">
-        Experiência</h1>
-      <div class="experience columns-auto" style="display: flex;">
-        <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
-      </div>
-    </section>
+    <div>
+      <section class="jobs mt-20">
+        <h1 class="jobs-h1 text-2xl" style="color: white; text-align: center;">
+          Experiência</h1>
+        <div class="experience columns-auto" style="display: flex;">
+          <app-job-card *ngFor="let job of jobs" [job]="job"></app-job-card>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="jobs mt-20">
+        <h1 class="jobs-h1 text-2xl" style="color: white; text-align: center;">
+          Projetos</h1>
+        <div class="experience columns-auto" style="display: flex;">
+          <app-projects-card *ngFor="let proj of projects" [proj]="proj"></app-projects-card>
+        </div>
+      </section>
+    </div>
   </div>
 </div>

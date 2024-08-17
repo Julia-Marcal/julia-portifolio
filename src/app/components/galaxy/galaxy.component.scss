@@ -14,7 +14,7 @@ h1{
 
 .hello-w:hover {
   cursor: pointer;
-  animation: growShrink 0.6s infinite alternate;
+  animation: growShrink 2s infinite alternate;
 }
 
 @keyframes growShrink {
