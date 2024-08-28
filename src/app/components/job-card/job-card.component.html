@@ -1,14 +1,26 @@
-<div class="m-10 overflow-hidden">
-  <a href="{{job.link}}"
-    class="flex flex-col items-center bg-gray-900 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
-    <img
-      class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg job-img rounded-md"
-      [src]="job.imageUrl" [alt]="job.imageAlt">
-    <div class="flex flex-col justify-between p-4 leading-normal overflow-hidden">
-      <h5 class="mb-2 text-2xl font-bold text-white">{{ job.title }} - {{ job.type }}</h5>
+<section class="text-gray-400 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="p-4 lg:w-auto flex flex-col bg-gray-900 rounded-lg">
+      <div class="flex items-center mb-4">
+        <div class="inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
+          <a href="{{job.link}}"
+          class="flex flex-col items-center bg-gray-900 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
+            <img
+              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg job-img rounded-md"
+              [src]="job.imageUrl" [alt]="job.imageAlt">
+          </a>
+        </div>
+        <h2 class="ml-4 text-white text-lg title-font font-medium">{{ job.title }} - {{ job.type }}</h2>
+      </div>
       <ul class="mb-3 font-normal text-secundaria dark:text-terciario">
         <li *ngFor="let task of job.tasks">{{ task }}</li>
       </ul>
+      <a href="{{ job.link }}" class="mt-auto text-indigo-400 inline-flex items-center">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
     </div>
-  </a>
-</div>
+  </div>
+</section>
