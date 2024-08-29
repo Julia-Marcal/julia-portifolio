@@ -1,6 +1,6 @@
 <section class="text-gray-400 body-font">
   <div class="container px-5 py-24 mx-auto">
-    <div class="p-4 lg:w-auto flex flex-col bg-gray-900 rounded-lg">
+    <div class="p-4 lg:w-auto flex flex-col bg-gray-900 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover:bg-gray-850 duration-300">
       <div class="flex items-center mb-4">
         <div class="inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
           <a href="{{job.link}}"
@@ -15,12 +15,6 @@
       <ul class="mb-3 font-normal text-secundaria dark:text-terciario">
         <li *ngFor="let task of job.tasks">{{ task }}</li>
       </ul>
-      <a href="{{ job.link }}" class="mt-auto text-indigo-400 inline-flex items-center">Learn More
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </a>
     </div>
   </div>
 </section>
